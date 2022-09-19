@@ -1,0 +1,79 @@
+body{
+  background-color: rgb(200,143,90);
+}
+
+header {
+  text-align: center;
+  font-size: 40px;
+  border-style: groove;
+  border-color: rgb(160,99,66);
+  background-color: rgb(196,92,68);
+  font-family: 'Roboto', sans-serif;
+  color: rgb(107,83,64);
+  text-shadow: 2px 2px rgb(51,50,42);
+  justify-content: center;
+}
+
+h1 {
+  letter-spacing: 15px;
+  font-weight: 2000px;
+  border-bottom-style: dashed;
+  border-color: rgb(160,99,66);
+  text-align: center;
+}
+
+#salmon {
+  padding-bottom: 40px;
+  width: 400px;
+}
+
+#cookie-top {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+h2 {
+  font-size: 60px;
+  position: static;
+  text-align: center;
+  width: max-content;
+  border-style: groove;
+  border-color: rgb(160,99,66);
+  background-color: rgb(196,92,68);
+  color: rgb(107,83,64);
+  text-shadow: 2px 2px rgb(51,50,42);
+  font-family: 'Roboto', sans-serif;
+  justify-content: center;
+}
+
+h3 {
+  font-size: 40px;
+  margin-left: 30px;
+  border-style: groove;
+  border-color: rgb(160,99,66);
+  width: max-content;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  color: rgb(107,83,64);
+  text-shadow: 2px 2px rgb(51,50,42);
+  font-family: 'Roboto', sans-serif;
+}
+
+article {
+  border-style: groove;
+  border-color: rgb(160,99,66);
+  background-color: rgb(196,92,68);
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+}
+
+ul {
+  font-family: 'Oswald', sans-serif;
+  color: rgb(168,168,143);
+  font-size: 30px;
+  text-shadow:1px 1px rgb(107,83,64);
+}
