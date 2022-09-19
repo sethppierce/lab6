@@ -9,7 +9,7 @@ console.dir(salesSection);
 let headerSection = document.getElementById('cookie-header');
 console.dir(headerSection);
 
-let cookieTop = document.getElementById('cookie-top')
+let cookieTop = document.getElementById('cookie-top');
 console.dir(cookieTop);
 // *** Object Literals ***
 
