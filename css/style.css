@@ -1,5 +1,6 @@
 body{
   background-color: rgb(200,143,90);
+  margin: 10;
 }
 
 header {
@@ -12,13 +13,12 @@ header {
   color: rgb(107,83,64);
   text-shadow: 2px 2px rgb(51,50,42);
   justify-content: center;
+  border-radius: 100%;
 }
 
 h1 {
   letter-spacing: 15px;
   font-weight: 2000px;
-  border-bottom-style: dashed;
-  border-color: rgb(160,99,66);
   text-align: center;
 }
 
@@ -27,26 +27,41 @@ h1 {
   width: 400px;
 }
 
-#cookie-top {
-  display: flex;
-  justify-content: center;
-  margin-top: 10px;
+nav {
+  list-style-type: none;
+    margin: 0;
+    margin-left: auto;
+    padding: 1.5%;
+    display:inline-block;
+    width: 100%;
+    border-style: groove;
+    border-color: rgb(160,99,66);
+    background-color: rgb(196,92,68);
+    font-family: 'Roboto', sans-serif;
+  color: rgb(107,83,64);
+  text-shadow: 2px 2px rgb(51,50,42);
+  margin-top: 35px;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 
 h2 {
   font-size: 60px;
   position: static;
-  text-align: center;
-  width: max-content;
-  border-style: groove;
-  border-color: rgb(160,99,66);
-  background-color: rgb(196,92,68);
+  display: inline-block;
+  padding-right: 100px;
+}
+#backtohome{
+  font-size: 30px;
+  font-weight: 2000px;
+  display: inline-block;
+  font-family: 'Roboto', sans-serif;
   color: rgb(107,83,64);
   text-shadow: 2px 2px rgb(51,50,42);
-  font-family: 'Roboto', sans-serif;
-  justify-content: center;
+  border-style: groove;
+  border-color: rgb(160,99,66);
+  background-color: rgb(200,143,90);
 }
-
 h3 {
   font-size: 40px;
   margin-left: 30px;

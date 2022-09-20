@@ -86,12 +86,19 @@ function cookieHeader(){
   imgElem.alt = 'picture of a beautiful salmon';
   imgElem.id = 'salmon';
   headerElem.appendChild(imgElem);
-
 }
+
+
 function cookieHtwo() {
   let h2Elem = document.createElement('h2');
   h2Elem.textContent = 'Cookie Sales';
   cookieTop.appendChild(h2Elem);
+  let buttonElem = document.createElement('button');
+  buttonElem.title = 'Back to Home';
+  buttonElem.textContent = 'Back to Home';
+  buttonElem.id = 'backtohome';
+  buttonElem.onclick= function(){window.location = 'https://sethppierce.github.io/lab6/';};
+  cookieTop.appendChild(buttonElem);
 }
 function cookieList(){
   let articleElem = document.createElement('article');
