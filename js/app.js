@@ -21,9 +21,7 @@ console.dir(cookieTitle);
 
 let tableElem = document.createElement('table');
 
-let ttlArr = [];
 
-let dailyTotal;
 
 // *** constructs ***
 let citiesArray = [];
@@ -76,9 +74,15 @@ function cookieHtwo() {
 }
 
 
-function dailytotals(){for(let i = 0; i < glbHours.length; i++){
-  dailyTotal = citiesArray[0].totalCookieArr[i] + citiesArray[1].totalCookieArr[i] + citiesArray[2].totalCookieArr[i] + citiesArray[3].totalCookieArr[i] + citiesArray[4].totalCookieArr[i];
-  ttlArr.push(dailyTotal);}}
+let ttlArr = [];
+
+function dailytotals(){
+  for(let j = 0; j < glbHours.length; j++){
+    let dailyTotaladd = 0;
+    for(let i = 0; i < citiesArray.length; i++){
+      dailyTotaladd += citiesArray[i].totalCookieArr[j];}
+    ttlArr.push(dailyTotaladd);
+  }}
 
 
 function tableTop(){
@@ -101,6 +105,15 @@ function tableTop(){
   row1.appendChild(totalTop);
 }
 
+let ttlallDaily = 0;
+function totalAllDaily(){
+  for(let i = 0; i < ttlArr.length; i ++){
+    ttlallDaily += ttlArr[i];}
+  return ttlallDaily;}
+
+
+//   let allDaily = (ttlArr[0] + ttlArr[1]) + (ttlArr[2] + ttlArr[3]) + (ttlArr[4] + ttlArr[5]) + (ttlArr[6] + ttlArr[7]) + (ttlArr[8] + ttlArr[9]) + (ttlArr[10] + ttlArr[11]) + (ttlArr[12] + ttlArr[13]);
+
 function tableBottom() {
   let tfootElem = document.createElement('tfoot');
   tableElem.appendChild(tfootElem);
@@ -116,7 +129,7 @@ function tableBottom() {
     totalTd.classList.add('content');
     totalFoot.appendChild(totalTd);
   }
-  let allDaily = (ttlArr[0] + ttlArr[1]) + (ttlArr[2] + ttlArr[3]) + (ttlArr[4] + ttlArr[5]) + (ttlArr[6] + ttlArr[7]) + (ttlArr[8] + ttlArr[9]) + (ttlArr[10] + ttlArr[11]) + (ttlArr[12] + ttlArr[13]);
+  let allDaily = totalAllDaily();
   let allTotal = document.createElement('td');
   allTotal.textContent = `${allDaily} cookies`;
   allTotal.classList.add('content');
@@ -135,7 +148,7 @@ CityConstruct.prototype.render = function(){
     this.totalCookie = this.totalCookie + this.amntCookie;
     this.totalCookieArr.push(this.amntCookie);
     let tdElem = document.createElement('td');
-    tdElem.classList.add('content');
+    tdElem.classList.add(`content`);
     tdElem.textContent = `${this.amntCookie} cookies`;
     row2.appendChild(tdElem);
   }
