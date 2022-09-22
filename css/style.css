@@ -1,38 +1,50 @@
 body{
-  background-color: rgb(240, 181, 126);
+  background-color: white;
   max-width: 100vw;
   text-align: center;
   overflow-x: hidden;
 }
 
-header {
-  text-align: center;
-  font-size: 30px;
-  border-style: groove;
-  border-color: rgb(160,99,66);
-  background-color: rgb(196,92,68);
-  font-family: 'Roboto', sans-serif;
-  color: rgb(107,83,64);
-  text-shadow: 2px 2px rgb(51,50,42);
-  border-radius: 100%;
-}
-
-h1 {
-  letter-spacing: 15px;
-  font-weight: 2000px;
-  text-align: center;
-}
-
-#salmon {
+main{
+  background-color: rgb(247, 202, 160);
+  width: max-content;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-bottom: 40px;
   padding-bottom: 40px;
-  width: 400px;
+  margin-top: 30px;
 }
 
+h1{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 100px;
+  font-family: 'Roboto', sans-serif;
+  color: #ffffff;
+text-shadow: 5px 5px rgb(51,50,42);
+font-weight: bolder;
+}
+
+header{
+  background-color: salmon;
+  height: 300px;
+  position: relative;
+  text-align: center;
+  color: white;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+}
 nav {
-  border-style: groove;
-  border-color: rgb(160,99,66);
-  background-color: rgb(196,92,68);
-  margin-top: 40px;
+  border-top: 2px dotted white;
+  background-color: salmon;
+  margin-top: 0px;
+  position: sticky;
+  top: 0%;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
 #navul {
@@ -62,11 +74,11 @@ h2 {
   font-size: 50px;
   font-weight: 2000px;
   font-family: 'Roboto', sans-serif;
-  color: rgb(107,83,64);
+  color: white;
   text-shadow: 1px 1px rgb(51,50,42);
   border-style: groove;
   border-color: rgb(160,99,66);
-  background-color: rgb(196,92,68);
+  background-color: salmon;
   font-weight: bolder;
   display: table-cell;
   text-align: center;
@@ -77,16 +89,22 @@ h2 {
   font-size: 20px;
   font-weight: 2000px;
   font-family: 'Roboto', sans-serif;
-  color: rgb(107,83,64);
+  color: white;
   text-shadow: 1px 1px rgb(51,50,42);
   border-style: groove;
   border-color: rgb(160,99,66);
-  background-color: rgb(200,143,90);
+  background-color: rgb(240, 181, 126);
   font-weight: bolder;
   width:max-content;
   display: block;
   text-align: center;
-  padding: 14px 16px;
+  margin: 5px;
+  transition: 500ms;
+  margin-left: 40px;
+}
+
+#backtohome:hover{
+  background-color: salmon;
 }
 
 h3 {
@@ -106,7 +124,7 @@ h3 {
 article {
   border-style: groove;
   border-color: rgb(160,99,66);
-  background-color: rgb(196,92,68);
+  background-color: salmon;
   font-size: 20px;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -125,27 +143,27 @@ table {
   width: 0%;
   margin-left: auto;
   margin-right: auto;
-  border-style: groove;
-  border-color: rgb(160,99,66);
-  background-color: rgb(196,92,68);
+  border-style: none;
+  border-color: white;
+  background-color: salmon;
 }
 
 .headerrow{
   font-size: 20px;
   border-style: solid;
-  border-color: rgb(200,143,90);
-  color: rgb(107,83,64);
-  text-shadow: 1px 1px rgb(51,50,42);
+  border-color: white;
+  color: white;
+  text-shadow: 1px 1px black;
   font-family: 'Roboto', sans-serif;
   font-weight: bolder;
 }
 
 .rowstart{
   font-size: 30px;
-  border-style: solid;
-  border-color: rgb(200,143,90);
-  color: rgb(107,83,64);
-  text-shadow: 2px 2px rgb(51,50,42);
+  border-style: dotted;
+  border-color: white;
+  color: white;
+  text-shadow: 1px 1px black;
   font-family: 'Roboto', sans-serif;
   font-weight: bolder;
 
@@ -154,8 +172,40 @@ table {
 .content{
   font-size: 20px;
   border-style: dashed;
-  border-color: rgb(200,143,90);
+  border-color: white;
   font-family: 'Oswald', sans-serif;
-  color: rgb(168,168,143);
+  color: white;
   text-shadow:1px 1px rgb(107,83,64);
+}
+
+#addNew {
+  display: flex;
+  justify-content: center;
+}
+
+legend {
+  font-size: 30px;
+}
+
+fieldset {
+  display: flex;
+  justify-content: center;
+  width:max-content;
+  border: none;
+  font-family: 'Oswald', sans-serif;
+  color: white;
+  text-shadow:1px 1px rgb(90, 70, 54);
+  background-color: salmon;
+}
+#frm1 label {
+  font-size: 20px;
+  color: white(139, 139, 119);
+  text-shadow:1px 1px rgb(90, 70, 54);
+}
+footer{
+  position: absolute;
+    width:100%;
+    height:100px; 
+    background:salmon;
+    flex-direction: row;
 }
